@@ -3,7 +3,7 @@ import marked, { MarkedOptions } from 'marked'
 
 export type StreamdownOptions = Partial<{
   markedOptions: MarkedOptions
-  writableOptions: ConstructorParameters<typeof Transform>[0]
+  transformOptions: ConstructorParameters<typeof Transform>[0]
 }>
 
 type Callback = (err?: any) => void
@@ -11,8 +11,9 @@ type Callback = (err?: any) => void
 export class Streamdown extends Transform {
   readonly markedOptions: MarkedOptions
 
-  constructor({ markedOptions, writableOptions }: StreamdownOptions) {
-    super(writableOptions)
+  constructor({ markedOptions, transformOptions }: StreamdownOptions) {
+    super(transformOptions)
+
     this.markedOptions = markedOptions
   }
   _write(chunk: Uint8Array | string, _encoding: string, cb: Callback) {
