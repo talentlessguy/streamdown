@@ -1,6 +1,6 @@
 import { suite } from 'uvu'
 import assert from 'uvu/assert'
-import { Streamdown, streamdown } from '../src'
+import { Streamdown, streamdown } from '../src/index'
 import { createReadStream } from 'fs'
 
 const test = suite('stream')
