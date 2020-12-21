@@ -1,10 +1,10 @@
 <p align="center" ><img src="logo.svg" /></p>
 
-![Top lang](https://img.shields.io/github/languages/top/talentlessguy/streamdown.svg?style=flat-square)
-![Vulnerabilities](https://img.shields.io/snyk/vulnerabilities/npm/streamdown.svg?style=flat-square)
-![Version](https://img.shields.io/npm/v/streamdown.svg?style=flat-square)
-![Last commit](https://img.shields.io/github/last-commit/talentlessguy/streamdown.svg?style=flat-square)
-![Minified size](https://img.shields.io/bundlephobia/min/streamdown.svg?style=flat-square) ![Codecov](https://img.shields.io/codecov/c/gh/talentlessguy/streamdown?style=flat-square)
+![Top lang][top-lang-badge-url]
+![Vulnerabilities][vulns-badge-url]
+[![Version][v-badge-url]][npm-url]
+![Last commit][last-commit-badge-url]
+![Minified size][size-badge-url] [![Codecov][cov-badge-url]][cov-url] [![Downloads][dl-badge-url]][npm-url]
 
 # Streamdown
 
@@ -52,3 +52,13 @@ const md = new Streamdown({
 ### `streamdown(opts)`
 
 Create a new `Streamdown` transform stream and return it.
+
+[top-lang-badge-url]: https://img.shields.io/github/languages/top/talentlessguy/streamdown.svg?style=flat-square
+[vulns-badge-url]: https://img.shields.io/snyk/vulnerabilities/npm/streamdown.svg?style=flat-square
+[v-badge-url]: https://img.shields.io/npm/v/streamdown.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/streamdown
+[last-commit-badge-url]: https://img.shields.io/github/last-commit/talentlessguy/streamdown.svg?style=flat-square
+[size-badge-url]: https://img.shields.io/bundlephobia/min/streamdown.svg?style=flat-square
+[cov-badge-url]: https://img.shields.io/codecov/c/gh/talentlessguy/streamdown?style=flat-square
+[cov-url]: https://codecov.io/gh/talentlessguy/streamdown
+[dl-badge-url]: https://img.shields.io/npm/dt/streamdown?style=flat-square
