@@ -36,7 +36,7 @@ import { streamdown, Streamdown } from 'streamdown'
 
 ### `new Streamdown(opts)`
 
-Create a new `Transform` stream with options for transform and `MarkedOptions` from `marked`
+Create a new `Streamdown` transform stream with options for transform and `MarkedOptions` from `marked`
 
 ```js
 const md = new Streamdown({
@@ -51,4 +51,4 @@ const md = new Streamdown({
 
 ### `streamdown(opts)`
 
-Create a new `Transform` stream and return it.
+Create a new `Streamdown` transform stream and return it.
