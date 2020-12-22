@@ -1,6 +1,6 @@
 {
   "name": "streamdown",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Stream markdown to HTML",
   "main": "dist/index.cjs",
   "module": "dist/index.js",
