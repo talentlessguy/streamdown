@@ -86,4 +86,23 @@ test('transform options are applied', () => {
   assert.is(result.readableEncoding, 'utf8')
 })
 
+
+test('links in large documents are applied', () => {
+  const source = createReadStream(`${process.cwd()}/__tests__/fixtures/large_document_test.md`)
+
+  const md = streamdown()
+
+  let output = ''
+
+  source
+    .pipe(md)
+    .on('data', (d) => {
+      if (d) output += d.toString()
+    })
+    .on('end', () => {
+      assert.is(output.split('\n')[0].trim(), '<p>Hello <a href="https://www.gutenberg.org/ebooks/24022">link</a></p>')
+    })
+
+})
+
 test.run()
