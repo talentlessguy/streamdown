@@ -10,6 +10,8 @@
 
 Stream markdown to HTML using [marked](https://marked.js) that later can be piped to response.
 
+> **WARNING!!!** Markdown wasn't intended to be streamable so this library has a lot of limitations. Splitting markdown in chunks might break code markup, folded > lists and link references. Use this library only for very basic markdown. The better approach would be using a string instead. More details here: #1
+
 ## Install
 
 ```sh
