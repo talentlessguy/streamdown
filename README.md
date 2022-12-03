@@ -6,6 +6,8 @@
 ![Last commit][last-commit-badge-url]
 ![Minified size][size-badge-url] [![Codecov][cov-badge-url]][cov-url] [![Downloads][dl-badge-url]][npm-url]
 
+# LOOKING FOR MAINTAINERS: DM @v_1rtl on telegram or email on v1rtl@proton.me
+
 # Streamdown
 
 Stream markdown to HTML using [marked](https://marked.js) that later can be piped to response.
